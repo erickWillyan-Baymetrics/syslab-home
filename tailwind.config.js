@@ -17,6 +17,10 @@ export default {
         grayPrimary: "#D1D1D1",
         grayMedium: "#555555",
         grayDark: "#333333",
+        sucessSecond: "#28A745",
+        dangerPrimary: "#DC3545",
+        attentionPrimary: "#FFC107",
+        orangeLight: "#FFBE98",
       },
       width: {
         "80%": "80%",
