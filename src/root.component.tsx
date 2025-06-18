@@ -13,17 +13,19 @@ export default function Root(props) {
   return (
     <div className="">
       <SearchbarMain />
-      <div className="grid justify-items-center w-full h-[600px] overflow-y-auto gap-6 my-7">
-        {MockLabs.map((lab: labs) => {
-          return (
-            <CardLabs
-              id={lab.id}
-              name={lab.name}
-              horario_inicio={lab.horario_inicio}
-              horario_fim={lab.horario_fim}
-            />
-          );
-        })}
+      <div className=" flex w-full justify-center">
+        <div className="grid justify-items-center min-[980px]:grid-cols-3 w-full max-w-md:h-[600px] max-w-7xl  max-w-md:overflow-y-auto gap-10 my-7">
+          {MockLabs.map((lab: labs) => {
+            return (
+              <CardLabs
+                id={lab.id}
+                name={lab.name}
+                horario_inicio={lab.horario_inicio}
+                horario_fim={lab.horario_fim}
+              />
+            );
+          })}
+        </div>
       </div>
       <div className="flex justify-end px-4">
         <ButtonAddLab />

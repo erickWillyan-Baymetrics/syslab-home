@@ -15,7 +15,7 @@ export default function CardLabs({
   return (
     <div
       key={id}
-      className="flex items-center justify-between bg-blueLight w-10/12 rounded-3xl px-7 h-24"
+      className="flex items-center justify-between bg-blueLight w-10/12 min-w-[330px] rounded-3xl px-7 min-h-28 shadow-md shadow-[#00000040]"
     >
       <div>
         <label className="text-base font-bold ">{name}</label>
