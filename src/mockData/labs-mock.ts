@@ -35,4 +35,28 @@ export const MockLabs = [
     horario_inicio: "07:00",
     horario_fim: "12:00",
   },
+  // {
+  //   id: 7,
+  //   name: "Lab 07",
+  //   horario_inicio: "10:45",
+  //   horario_fim: "19:00",
+  // },
+  // {
+  //   id: 8,
+  //   name: "Lab 08",
+  //   horario_inicio: "07:00",
+  //   horario_fim: "12:00",
+  // },
+  // {
+  //   id: 9,
+  //   name: "Lab 09",
+  //   horario_inicio: "10:45",
+  //   horario_fim: "19:00",
+  // },
+  // {
+  //   id: 10,
+  //   name: "Lab 10",
+  //   horario_inicio: "07:00",
+  //   horario_fim: "12:00",
+  // },
 ];

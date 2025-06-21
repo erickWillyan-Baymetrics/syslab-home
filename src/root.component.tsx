@@ -11,10 +11,10 @@ interface labs {
 
 export default function Root(props) {
   return (
-    <div className="">
+    <>
       <SearchbarMain />
-      <div className=" flex w-full justify-center">
-        <div className="grid justify-items-center min-[980px]:grid-cols-3 w-full max-w-md:h-[600px] max-w-7xl  max-w-md:overflow-y-auto gap-10 my-7">
+      <div className=" flex flex-col w-full items-center">
+        <div className="grid justify-items-center min-[1200px]:grid-cols-3 min-[768px]:grid-cols-2  max-md:w-full gap-16  max-w-7xl max-md:overflow-y-auto my-7 py-3">
           {MockLabs.map((lab: labs) => {
             return (
               <CardLabs
@@ -26,10 +26,10 @@ export default function Root(props) {
             );
           })}
         </div>
+        <div className="sticky flex bottom-8 justify-end px-14 min-[1200px]:w-[1120px] min-[768px]:w-[720px] max-md:w-full max-w-7xl min-[768px]:mt-10">
+          <ButtonAddLab />
+        </div>
       </div>
-      <div className="flex justify-end px-4">
-        <ButtonAddLab />
-      </div>
-    </div>
+    </>
   );
 }
