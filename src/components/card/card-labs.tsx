@@ -1,6 +1,6 @@
-import clockIcon from "../../assets/image/icon-clock.svg";
+import iconClock from "../../assets/image/icon-clock.svg";
 
-interface labs {
+interface Labs {
   id: number;
   name: string;
   horario_inicio: string;
@@ -11,7 +11,7 @@ export default function CardLabs({
   name,
   horario_fim,
   horario_inicio,
-}: labs) {
+}: Labs) {
   return (
     <div
       key={id}
@@ -21,11 +21,7 @@ export default function CardLabs({
         <label className="text-base font-bold ">{name}</label>
 
         <div className="flex items-center mt-2">
-          <img
-            src={clockIcon}
-            alt="ìcone de relógio"
-            className="w-5 h-5 mr-2"
-          />
+          <img src={iconClock} alt="icon-clock" className="w-5 h-5 mr-2" />
           <p className="">
             {horario_inicio} - {horario_fim}
           </p>
